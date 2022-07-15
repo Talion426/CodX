@@ -1,0 +1,39 @@
+.text {
+    margin: 0 0 60px 0;
+    &__body{
+        position: relative;
+    }
+    &__title {
+        font-size: 3rem;
+        line-height: 1.4;
+        font-weight: 700;
+        max-width: 750px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 500;
+        max-width: 650px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__text {
+        margin: 43px 0 0 0;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 300;
+        max-width: 680px;
+    }
+    &__blockquote {
+        font-size: 36px;
+        font-weight: 700;
+        max-width: 450px;
+        max-height: 150px;
+        padding: 3px;
+        overflow: hidden;
+        position: absolute;
+        top: 40%;
+        left: calc(100% - 450px);
+    }
+}

@@ -1,0 +1,49 @@
+@import "_nullstyle.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-family: Outfit, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(255, 127, 150, 1);
+    &__body {
+        max-width: 602px;
+    }
+    &__par {
+        font-size: 64px;
+        font-weight: 800;
+        color: #2f2f2f;
+        margin: 0 0 8px 0;
+    }
+    &__404 {
+        color: #fff;
+        font-size: 198px;
+        font-weight: 800;
+        margin: 0 0 40px 0;
+    }
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: #2f2f2f;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        &:hover {
+            background: linear-gradient(
+                90deg,
+                rgba(234, 215, 27, 0.51),
+                rgba(255, 127, 150, 0.53) 52%,
+                rgba(130, 203, 172, 0.47)
+            );
+        }
+    }
+}

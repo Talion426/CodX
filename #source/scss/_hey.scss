@@ -1,0 +1,16 @@
+.hey {
+    margin: 130px 0 70px 0;
+    &__title {
+        text-align: center;
+        margin: 0 auto 30px auto;
+        max-width: 900px;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}

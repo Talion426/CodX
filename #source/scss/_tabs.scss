@@ -1,0 +1,84 @@
+.tabs {
+    margin: 0 0 100px 0;
+    &__body {
+        box-shadow: 0 -4px 19px 12px rgb(0 0 0 / 3%);
+        border-radius: 30px;
+        padding: 50px 50px 600px;
+        position: relative;
+    }
+    &__content {
+        display: flex;
+        margin: 64px 0 0 0;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1.5s;
+    }
+    &__img--container {
+        margin: 0 100px;
+    }
+    &__prof {
+        color: #ff7f96;
+        font-size: 18px;
+        max-width: 200px;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 36px;
+        max-width: 370px;
+        margin: 16px 0;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0 0 32px 0;
+        max-width: 475px;
+    }
+    &__links-list {
+        display: flex;
+    }
+    &__links-item {
+        margin: 0 10px;
+    }
+    &__links-link {
+        color: #000000;
+        font-size: 18px;
+        transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        &:hover {
+            color: #82cbac;
+        }
+    }
+    input[type="radio"] {
+        display: none;
+    }
+    label {
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 800;
+        display: inline-flex;
+        width: 180px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #2f2f2f;
+        border-radius: 30px;
+        margin: 0 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #2f2f2f;
+            color: #fff;
+        }
+    }
+    input[type="radio"]:checked + label {
+        background-color: #2f2f2f;
+        color: #fff;
+    }
+}
+
+#tab-btn-1:checked ~ .tabs__content-1,
+#tab-btn-2:checked ~ .tabs__content-2,
+#tab-btn-3:checked ~ .tabs__content-3 {
+    opacity: 1;
+    transition: opacity 1.5s;
+    z-index: 100;
+}
