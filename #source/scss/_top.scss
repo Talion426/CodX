@@ -1,17 +1,45 @@
 .top {
     margin: 0 0 55px 0;
+    &__container {
+        max-width: 1130px;
+    }
     &__title {
         text-align: center;
         margin: 0 0 64px 0;
+        @media (max-width: 992px) {
+            margin: 0 0 44px 0;
+        }
+        @media (max-width: 767px) {
+            margin: 0 0 34px 0;
+        }
     }
     &__row {
-        margin: 50px 64px;
+        margin: 50px 0px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
         column-gap: 38px;
         row-gap: 42px;
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 50px 20px;
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 40px 90px;
+        }
+        @media (max-width: 616px) {
+            margin: 40px 70px;
+        }
+        @media (max-width: 545px) {
+            margin: 40px 50px;
+        }
+        @media (max-width: 445px) {
+            margin: 40px 10px;
+        }
+        @media (max-width: 362px) {
+            margin: 40px 0px;
+        }
     }
     &__element {
         border-radius: 30px;
@@ -40,6 +68,9 @@
         height: 210px;
         overflow: hidden;
         border-radius: 30px;
+        @media (max-width: 445px) {
+            height: 180px;
+        }
     }
     &__img {
         width: 100%;
@@ -53,6 +84,9 @@
         align-items: center;
         gap: 20px;
         padding: 20px;
+        @media (max-width: 767px) {
+            padding: 15px;
+        }
     }
     &__text {
         display: flex;
@@ -61,10 +95,17 @@
     &__name {
         font-size: 16px;
         margin: 0 10px 0 0;
+        @media (max-width: 767px) {
+            font-size: 14px;
+            margin: 0 8px 0 0;
+        }
     }
     &__number {
         font-weight: 700;
         font-size: 18px;
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
     }
     &__icons {
         display: flex;
@@ -110,6 +151,12 @@
         justify-content: center;
         align-items: center;
         font-weight: 700;
+        @media (max-width: 992px) {
+            margin: 34px 0 0 0;
+        }
+        @media (max-width: 767px) {
+            padding: 12px 35px;
+        }
     }
     input[type="radio"] {
         display: none;
@@ -129,6 +176,21 @@
         &:hover {
             background-color: #2f2f2f;
             color: #fff;
+        }
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            padding: 10px 35px;
+            margin: 4px;
+        }
+        @media (max-width: 992px) {
+            font-size: 16px;
+            padding: 8px 30px;
+            margin: 3px;
+        }
+        @media (max-width: 767px) {
+            font-size: 14px;
+            padding: 7px 14px;
+            margin: 2px;
         }
     }
 }

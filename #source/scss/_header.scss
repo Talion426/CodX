@@ -1,12 +1,17 @@
 .header {
     margin: 17px 0 0 0;
-    &__nav {
-        display: flex;
-        justify-content: space-between;
+    &__body {
         background: #ffffff;
         box-shadow: 0 -4px 19px 12px rgba(0, 0, 0, 0.03);
         border-radius: 30px;
         padding: 14px 28px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
     &__nav-list {
         display: flex;
@@ -53,5 +58,45 @@
         padding: 13px 15px;
         margin: 0 0 0 50px;
         font-weight: 700;
+    }
+    &__burger-nav {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 992px) {
+            display: flex;
+        }
+    }
+    &__burger-logo--container {
+        display: flex;
+    }
+    &__burger-menu {
+        padding: 2px;
+    }
+    &__burger-btn {
+        background-color: #fff;
+    }
+    &__burger-elem {
+        border-radius: 2px;
+        background-color: #2f2f2f;
+        height: 3px;
+    }
+    &__burger-top {
+        width: 5px;
+        padding-right: 18px;
+        padding-bottom: 0px;
+    }
+    &__burger-middle {
+        width: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 18px;
+        padding-bottom: 0px;
+    }
+    &__burger-bottom {
+        width: 5px;
+        margin-left: auto;
+        padding-right: 18px;
+        padding-bottom: 0px;
     }
 }

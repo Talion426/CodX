@@ -134,17 +134,51 @@ h6 {
 .main__body {
   max-width: 602px;
 }
+@media (max-width: 1200px) {
+  .main__body {
+    max-width: 452px;
+  }
+}
+@media (max-width: 767px) {
+  .main__body {
+    padding: 0 20px;
+    text-align: center;
+  }
+}
 .main__par {
   font-size: 64px;
   font-weight: 800;
   color: #2f2f2f;
   margin: 0 0 8px 0;
 }
+@media (max-width: 1200px) {
+  .main__par {
+    font-size: 48px;
+    margin: 0 0 8px 0;
+  }
+}
+@media (max-width: 767px) {
+  .main__par {
+    font-size: 32px;
+  }
+}
 .main__404 {
   color: #fff;
   font-size: 198px;
   font-weight: 800;
   margin: 0 0 40px 0;
+}
+@media (max-width: 1200px) {
+  .main__404 {
+    font-size: 144px;
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 767px) {
+  .main__404 {
+    font-size: 96px;
+    margin: 0 0 30px 0;
+  }
 }
 .main__link {
   display: -webkit-inline-box;

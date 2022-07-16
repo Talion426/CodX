@@ -1,14 +1,32 @@
 .faq {
     margin: 0 0 100px 0;
+    @media (max-width: 992px) {
+        margin: 0 0 80px 0;
+    }
+    @media (max-width: 767px) {
+        margin: 0 0 60px 0;
+    }
     &__content {
         margin: 0 64px;
+        @media (max-width: 515px) {
+            margin: 0;
+        }
     }
     &__title {
         margin: 0 0 50px 0;
+        @media (max-width: 992px) {
+            margin: 0 0 40px 0;
+        }
+        @media (max-width: 767px) {
+            margin: 0 0 30px 0;
+        }
     }
     &__item {
         margin: 0 0 25px 0;
         position: relative;
+        @media (max-width: 767px) {
+            margin: 0 0 15px 0;
+        }
     }
     &__head {
         position: relative;
@@ -19,8 +37,12 @@
             rgba(130, 203, 172, 0.47)
         );
         border-radius: 30px;
-        padding: 26px;
+        padding: 26px 60px 26px 26px;
         margin: 0 0 25px 0;
+        @media (max-width: 767px) {
+            padding: 20px 54px 20px 20px;
+            margin: 0 0 15px 0;
+        }
     }
     &__category {
         font-size: 22px;
@@ -30,12 +52,19 @@
             display: inline-block;
             width: 22px;
             height: 22px;
-            top: 30%;
+            top: calc(50% - 9px);
             right: 30px;
-            border-bottom: 3px solid #79AF98;
-            border-right: 3px solid #79AF98;
+            border-bottom: 3px solid #79af98;
+            border-right: 3px solid #79af98;
             transform: rotate(45deg);
             transition: all 0.3s ease-in-out;
+            @media (max-width: 767px) {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
         }
     }
     &__label {
@@ -57,8 +86,21 @@
         border-radius: 30px;
         padding: 32px 27px 64px;
         justify-content: space-between;
+        gap: 15px;
         p {
             max-width: 465px;
+            @media (max-width: 767px) {
+                max-width: none;
+                margin: 0 0 15px 0;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            padding: 25px 25px 48px;
+            font-size: 15px;
+            line-height: 16px;
         }
     }
 }
@@ -68,4 +110,7 @@
 #faq-btn-4:checked + #faq__descr-4,
 #faq-btn-5:checked + #faq__descr-5 {
     display: flex;
+    @media (max-width: 767px) {
+        display: block;
+    }
 }

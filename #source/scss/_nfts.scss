@@ -5,6 +5,14 @@
     &__slider-slide {
         max-width: 152px;
         max-height: 152px;
+        @media (max-width: 1200px) {
+            max-width: 122px;
+            max-height: 122px;
+        }
+        @media (max-width: 767px) {
+            max-width: 82px;
+            max-height: 82px;
+        }
     }
     &__img {
         width: 100%;

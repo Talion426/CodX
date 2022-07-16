@@ -5,6 +5,9 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
         text-align: center;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__find {
         box-shadow: 0 -4px 19px 12px rgb(0 0 0 / 3%);
@@ -13,6 +16,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: 767px) {
+            padding: 100px 30px 80px;
+        }
     }
     &__title {
         margin: 0 0 10px 0;
@@ -23,11 +29,20 @@
         font-size: 24px;
         max-width: 310px;
         margin: 0 0 20px 0;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            max-width: 280px;
+            margin: 0 0 15px 0;
+        }
     }
     &__number {
         font-weight: 600;
         font-size: 24px;
         margin: 0 0 150px 0;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin: 0 0 110px 0;
+        }
     }
     &__links-list {
         display: flex;
@@ -50,11 +65,17 @@
         flex-direction: column;
         align-items: center;
         position: relative;
+        @media (max-width: 767px) {
+            padding: 100px 30px 80px;
+        }
     }
     &__time {
         font-size: 26px;
         font-weight: 800;
         margin: 0 0 200px 0;
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
     }
     &__btn {
         display: inline-block;
@@ -66,6 +87,8 @@
         font-weight: 600;
         &:hover {
             cursor: pointer;
+        }
+        @media (max-width: 767px) {
         }
     }
     #contacts-btn-1,
@@ -93,6 +116,10 @@
         &:hover {
             cursor: pointer;
         }
+        @media (max-width: 484px) {
+            right: 20px;
+            top: 15px;
+        }
     }
 }
 .contacts-form-block {
@@ -100,16 +127,27 @@
     text-align: left;
     letter-spacing: -0.03em;
     color: #fff;
+    @media (max-width: 484px) {
+        padding: 40px;
+    }
+    @media (max-width: 386px) {
+        padding: 40px 20px;
+    }
     &__text {
         font-size: 24px;
-    }
-    &__form {
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
     }
     &__label {
         display: inline-block;
         margin: 30px 0 10px 16px;
         font-size: 18px;
         font-weight: 500;
+        @media (max-width: 767px) {
+            margin: 16px 0 8px 16px;
+            font-size: 16px;
+        }
     }
     &__elem {
         background-color: transparent;
@@ -120,14 +158,21 @@
         color: #ffffff;
         font-size: 18px;
         padding: 11px 20px;
+        @media (max-width: 767px) {
+            height: 35px;
+            font-size: 16px;
+            padding: 8px 16px;
+        }
     }
     &__textarea {
         height: 130px;
         resize: none;
         margin: 0 0 10px 0;
-        
+        @media (max-width: 767px) {
+            height: 100px;
+        }
     }
-    &__button{
+    &__button {
         background-color: #ffffff;
         padding: 0 40px;
         height: 40px;
@@ -135,9 +180,13 @@
         font-size: 14px;
         font-weight: 500;
         transition: all 0.2s ease-in-out;
-        &:hover{
+        &:hover {
             color: #ffffff;
             background-color: #2f2f2f;
+        }
+        @media (max-width: 767px) {
+            height: 35px;
+            padding: 0 35px;
         }
     }
 }

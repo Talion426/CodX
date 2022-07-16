@@ -17,57 +17,76 @@
     <body>
         <header class="header">
             <div class="container">
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="../index.html" class="header__nav-link">
-                                <img src="../img/header-logo_Cod.png" alt="Cod" class="header__nav-img" />
-                                <img src="../img/header-logo_X.png" alt="X" class="header__nav-img" />
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="about.html" class="header__nav-link">About Us</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="products.html" class="header__nav-link">NFTs</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="contact.html" class="header__nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="header__links">
-                        <ul class="header__links-list">
-                            <li class="header__links-item">
-                                <a href="https://twitter.com/?lang=it" target="_blank" class="header__links-link"
-                                    ><i class="fa-brands fa-twitter"></i
-                                ></a>
+                <div class="header__body">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="../index.html" class="header__nav-link">
+                                    <img src="../img/header-logo_Cod.png" alt="Cod" class="header__nav-img" />
+                                    <img src="../img/header-logo_X.png" alt="X" class="header__nav-img" />
+                                </a>
                             </li>
-                            <li class="header__links-item">
-                                <a href="https://www.instagram.com" target="_blank" class="header__links-link"
-                                    ><i class="fa-brands fa-instagram"></i
-                                ></a>
+                            <li class="header__nav-item">
+                                <a href="about.html" class="header__nav-link">About Us</a>
                             </li>
-                            <li class="header__links-item">
-                                <a href="https://www.facebook.com" target="_blank" class="header__links-link"
-                                    ><i class="fa-brands fa-facebook-f"></i
-                                ></a>
+                            <li class="header__nav-item">
+                                <a href="products.html" class="header__nav-link">NFTs</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contact.html" class="header__nav-link">Contact</a>
                             </li>
                         </ul>
-                        <a href="https://opensea.io" target="_blank" class="header__links-button button-hov-act"
-                            >View on OpenSea</a
-                        >
+                        <div class="header__links">
+                            <ul class="header__links-list">
+                                <li class="header__links-item">
+                                    <a href="https://twitter.com/?lang=it" target="_blank" class="header__links-link"
+                                        ><i class="fa-brands fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li class="header__links-item">
+                                    <a href="https://www.instagram.com" target="_blank" class="header__links-link"
+                                        ><i class="fa-brands fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li class="header__links-item">
+                                    <a href="https://www.facebook.com" target="_blank" class="header__links-link"
+                                        ><i class="fa-brands fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                            <a href="https://opensea.io" target="_blank" class="header__links-button button-hov-act"
+                                >View on OpenSea</a
+                            >
+                        </div>
+                    </nav>
+                    <div class="header__burger-nav">
+                        <div class="header__burger-item">
+                            <a href="../index.html" class="header__burger-logo--container">
+                                <img src="../img/header-logo_Cod.png" alt="Cod" class="header__burger-logo" />
+                                <img src="../img/header-logo_X.png" alt="X" class="header__burger-logo" />
+                            </a>
+                        </div>
+                        <div class="header__burger-menu">
+                            <button class="header__burger-btn">
+                                <div class="header__burger-top header__burger-elem"></div>
+                                <div class="header__burger-middle header__burger-elem"></div>
+                                <div class="header__burger-bottom header__burger-elem"></div>
+                            </button>
+                        </div>
                     </div>
-                </nav>
+                </div>
             </div>
         </header>
         <main class="main">
             <section class="hey">
-                <h2 class="hey__title title">
-                    We can create a new Beginning with our <span class="gradient-title">NFT</span>
-                </h2>
-                <p class="hey__text">
-                    Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at
-                </p>
+                <div class="container">
+                    <h2 class="hey__title title">
+                        We can create a new Beginning with our <span class="gradient-title">NFT</span>
+                    </h2>
+                    <p class="hey__text">
+                        Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at
+                    </p>
+                </div>
             </section>
             <section class="people">
                 <div class="people__slider swiper">
@@ -753,7 +772,7 @@
             <div class="container">
                 <div class="footer__body">
                     <div class="footer__row">
-                        <div class="footer__column">
+                        <div class="footer__column footer__column-1">
                             <a href="../index.html" class="footer__logo--link">
                                 <img src="../img/logo_Cod.png" alt="" class="footer__logo" />
                                 <img src="../img/logo_X.png" alt="" class="footer__logo" />
@@ -777,7 +796,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__column">
+                        <div class="footer__column footer__column-2">
                             <p class="footer__subtitle">Site</p>
                             <ul class="footer__list">
                                 <li class="footer__item">
@@ -791,7 +810,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__column">
+                        <div class="footer__column footer__column-3">
                             <p class="footer__subtitle">Utility</p>
                             <ul class="footer__list">
                                 <li class="footer__item">
@@ -807,7 +826,7 @@
                                 <li class="footer__item"><a href="404.html" class="footer__link">404</a></li>
                             </ul>
                         </div>
-                        <div class="footer__column">
+                        <div class="footer__column footer__column-4">
                             <p class="footer__title">Stay in the loop</p>
                             <p class="footer__text">
                                 Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et

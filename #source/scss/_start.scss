@@ -1,24 +1,53 @@
 .start {
     &__row {
         display: flex;
+        gap: 200px;
         justify-content: space-between;
         margin: 215px 0 220px 0;
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 90px auto 120px auto;
+        }
+        @media (max-width: 767px) {
+            margin: 50px auto 70px auto;
+            gap: 160px;
+        }
     }
     &__subtitle {
         font-size: 14px;
         font-weight: 800;
         color: #82cbac;
         max-width: 250px;
+        @media (max-width: 992px) {
+            margin: 0 auto;
+        }
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
     }
     &__title {
         margin: 5px 0 16px 0;
         max-width: 560px;
+        @media (max-width: 767px) {
+            max-width: 370px;
+            margin: 5px auto 16px auto;
+        }
     }
     &__text {
         font-size: 20px;
         font-weight: 300;
         line-height: 26px;
         max-width: 470px;
+        @media (max-width: 992px) {
+            margin: 0 auto;
+        }
+        @media (max-width: 767px) {
+            font-size: 15px;
+            line-height: 18px;
+            max-width: 400px;
+        }
     }
     &__nfts {
         position: relative;
@@ -27,10 +56,33 @@
         position: absolute;
         top: -100px;
         left: -169px;
+        @media (max-width: 992px) {
+            left: -69px;
+        }
+        @media (max-width: 565px) {
+            left: -39px;
+        }
+        @media (max-width: 419px) {
+            left: -19px;
+            top: -70px;
+        }
     }
     &__mia-nft {
         position: relative;
         z-index: 100;
+        @media (max-width: 992px) {
+            position: relative;
+            left: 100px;
+        }
+        @media (max-width: 767px) {
+            left: 60px;
+        }
+        @media (max-width: 565px) {
+            left: 30px;
+        }
+        @media (max-width: 419px) {
+            left: 30px;
+        }
     }
     &__person {
         display: inline-flex;
@@ -44,17 +96,27 @@
         padding: 5px 15px 5px 8px;
         top: 15px;
         left: -40px;
+        @media (max-width: 419px) {
+            top: 25px;
+        }
     }
     &__mia-person {
         padding: 7px 16px 7px 11px;
         bottom: 22px;
         left: -84px;
+        @media (max-width: 419px) {
+            padding: 5px 12px 5px 8px;
+        }
     }
     &__lee-avatar--container {
         margin: 0 5px 0 0;
     }
     &__mia-avatar--container {
         margin: 0 12px 0 0;
+        @media (max-width: 419px) {
+            width: 30px;
+            height: 30px;
+        }
     }
     &__avatar {
         width: 100%;
@@ -69,17 +131,47 @@
     &__mia-name {
         font-size: 16px;
         font-weight: 700;
+        @media (max-width: 419px) {
+            font-size: 12px;
+        }
     }
     &__mia-prof {
         font-size: 13px;
+        @media (max-width: 419px) {
+            font-size: 11px;
+        }
     }
     &__lee-img--container {
-        max-width: 325px;
-        max-height: 325px;
+        width: 325px;
+        height: 325px;
+        @media (max-width: 767px) {
+            width: 225px;
+            height: 225px;
+        }
+        @media (max-width: 565px) {
+            width: 165px;
+            height: 165px;
+        }
+        @media (max-width: 419px) {
+            width: 120px;
+            height: 120px;
+        }
     }
     &__mia-img--container {
-        max-width: 410px;
-        max-height: 410px;
+        width: 410px;
+        height: 410px;
+        @media (max-width: 767px) {
+            width: 310px;
+            height: 310px;
+        }
+        @media (max-width: 565px) {
+            width: 220px;
+            height: 220px;
+        }
+        @media (max-width: 419px) {
+            width: 160px;
+            height: 160px;
+        }
     }
     &__img {
         width: 100%;

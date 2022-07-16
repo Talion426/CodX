@@ -1,18 +1,46 @@
 .collections {
     margin: 110px 0;
+    @media (max-width: 1200px) {
+        margin: 90px 0;
+    }
+    @media (max-width: 992px) {
+        margin: 70px 0;
+    }
+    @media (max-width: 767px) {
+        margin: 50px 0;
+    }
     &__title {
         text-align: center;
         margin: 0 0 64px 0;
     }
     &__row {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 63px;
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 40px;
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 100px;
+            gap: 53px;
+        }
+        @media (max-width: 616px) {
+            margin: 0 80px;
+            gap: 43px;
+        }
+        @media (max-width: 545px) {
+            margin: 0 40px;
+            gap: 33px;
+        }
+        @media (max-width: 424px) {
+            margin: 0;
+        }
     }
 
     &__body {
         border-radius: 30px;
-        flex: 1 1 33.333%;
         box-shadow: 0 -4px 19px 12px rgb(0 0 0 / 3%);
         position: relative;
         transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -37,6 +65,9 @@
     &__img--container {
         height: 221px;
         overflow: hidden;
+        @media (max-width: 767px) {
+            height: 181px;
+        }
     }
     &__img {
         width: 100%;
@@ -48,6 +79,10 @@
         font-weight: 700;
         font-size: 26px;
         margin: 29px 50px 37px;
+        @media (max-width: 767px) {
+            font-size: 22px;
+            margin: 15px 30px 20px;
+        }
     }
 
     &__link {
@@ -64,5 +99,11 @@
         justify-content: center;
         align-items: center;
         font-weight: 700;
+        @media (max-width: 992px) {
+            margin: 44px 0 0 0;
+        }
+        @media (max-width: 767px) {
+            padding: 12px 35px;
+        }
     }
 }

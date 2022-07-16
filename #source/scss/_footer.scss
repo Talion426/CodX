@@ -1,14 +1,41 @@
 .footer {
     &__body {
-        padding: 100px 64px 25px;
+        padding: 100px 44px 25px;
         border-radius: 20px;
         box-shadow: 0 -4px 19px 12px rgb(0 0 0 / 3%);
         margin: 0 0 15px 0;
+        @media (max-width: 992px) {
+            padding: 80px 35px 20px;
+        }
+        @media (max-width: 767px) {
+            padding: 50px 35px 20px;
+        }
     }
     &__row {
         display: flex;
+        gap: 40px;
         justify-content: space-between;
         margin: 0 0 120px 0;
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 100px;
+            margin: 0 0 100px 0;
+        }
+        @media (max-width: 767px) {
+            justify-content: start;
+            margin: 0 0 70px 0;
+            column-gap: 80px;
+            row-gap: 60px;
+        }
+        @media (max-width: 545px) {
+            column-gap: 50px;
+        }
+    }
+    &__column-1 {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
     &__logo--link {
         display: flex;
@@ -50,12 +77,20 @@
         font-size: 35px;
         font-weight: 700;
         max-width: 500px;
+        @media (max-width: 545px) {
+            font-size: 28px;
+        }
     }
     &__text {
         font-size: 20px;
         line-height: 26px;
         margin: 8px 0 16px 0;
         max-width: 510px;
+        @media (max-width: 545px) {
+            font-size: 16px;
+            line-height: 18px;
+            margin: 10px 0 16px 0;
+        }
     }
     &__input {
         font-size: 16px;
@@ -64,6 +99,12 @@
         padding: 13px 15px;
         border-radius: 30px;
         background-color: #f6f6f6;
+        @media (max-width: 545px) {
+            text-align: center;
+        }
+        @media (max-width: 440px) {
+            width: 100%;
+        }
     }
     &__button {
         display: inline-block;
@@ -75,12 +116,28 @@
         padding: 13px 15px;
         font-weight: 700;
         margin: 0 0 0 8px;
+        @media (max-width: 545px) {
+            display: block;
+            margin: 10px 0 0 0;
+            width: 327px;
+        }
+        @media (max-width: 440px) {
+            width: 100%;
+        }
     }
     &__final {
         font-weight: 500;
         font-size: 16px;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 767px) {
+            display: block;
+            P {
+                &:first-child {
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
     }
     &__temp--span {
         color: #ff7f96;

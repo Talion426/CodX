@@ -22,8 +22,11 @@ body {
     font-size: 64px;
     line-height: 64px;
     font-weight: 800;
-    letter-spacing: 0.48px;
     color: #2f2f2f;
+    @media (max-width: 767px) {
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
 .gradient-title {
     background: linear-gradient(90deg, #ead71b, #ff7f96 44%, #82cbac 66%);
